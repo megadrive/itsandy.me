@@ -1,0 +1,14 @@
+---
+export interface Props {
+	prefix: string;
+	href: string;
+	title: string;
+}
+
+const { href, title, prefix } = Astro.props;
+---
+
+<div class="flex flex-col">
+	<span class="pr-4">{prefix}</span>
+	<a href={href} class="underline">{title}</a>
+</div>

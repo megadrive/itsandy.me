@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1 class="text-center">
+      Hi! 👋 I'm <span
+        class="font-semibold bg-clip-text text-transparent bg-gradient-to-b from-purple-200 via-purple-400 to-purple-800"
+        >Andy!</span
+      >
+    </h1>
+    <section>
+      I'm a developer from Melbourne getting back into the swing of things after
+      working in the animal welfare field.
+    </section>
+    <section class="grid grid-cols-2 gap-4 mt-8">
+      <Card
+        href="mailto:hello@itsandy.me"
+        title="hello@itsandy.me"
+        prefix="email"
+      />
+      <Card
+        href="https://github.com/megadrive"
+        title="https://github.com/megadrive"
+        prefix="github"
+      />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  h1 {
+    margin: 2rem 0;
+  }
+
+  main {
+    margin: auto;
+    padding: 1em;
+    max-width: 60ch;
+  }
+</style>
